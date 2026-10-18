@@ -92,11 +92,11 @@ if (DATA_DIR) fs.mkdirSync(DATA_DIR, { recursive: true });
 const DATA_FILE = path.join(DATA_DIR || __dirname, 'data.json');
 
 const defaultSettings = () => ({
-  siteName: 'Tableau de bord du groupe',
+  siteName: 'DashBoard du groupe',
   defaultTheme: 'anthracite',
   imageBase: ITEM_IMAGE_BASE,
   maxLogs: 5000,
-  footerText: 'Données en direct depuis le serveur',
+  footerText: 'Données en direct depuis le serveur , Dev by Kichou',
   groupLabels: {},
   hiddenCategories: [],
   options: { showFooter: true, showLive: true, allowThemes: true, animateNumbers: true, listGroups: true },
