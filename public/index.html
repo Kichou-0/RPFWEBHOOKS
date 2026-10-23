@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr" data-theme="anthracite">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>K13 – Stock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <script>
+    try { var p = JSON.parse(localStorage.getItem('prefs') || '{}'); for (var k in p) document.documentElement.dataset[k] = p[k]; } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="dock-wrap">
+    <div class="dock">
+      <div class="menu-anchor">
+        <button class="userpill" id="userBtn" aria-haspopup="true" aria-expanded="false">
+          <span class="avatar" id="avatar">K</span>
+          <span class="uname" id="groupName">K13</span>
+          <span aria-hidden="true">▾</span>
+        </button>
+        <div class="menu" id="menu" hidden></div>
+      </div>
+      <span class="sep"></span>
+      <nav id="nav" aria-label="Sections"></nav>
+      <span class="sep"></span>
+      <span class="live" id="live" title="État de la connexion"><i></i><span>connexion</span></span>
+    </div>
+  </header>
+  <main>
+    <div class="page-head"><h1 id="pageTitle"></h1></div>
+    <div id="v"></div>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script src="/app.js"></script>
+</body>
+</html>
